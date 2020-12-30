@@ -2,97 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.serif {
+  font-family: "Bree serif", serif;
+  font-weight: "700";
+}
+
+.red {
+  color: red;
+  font-size: 2rem;
+}
+
 @layer components {
   .border-bottom-black {
     @apply border-b-2 border-black;
   }
-}
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
-/* 
-:root {
-  --green: #22543d;
-  --yellow: #ec9c08;
-  --lightgreen: #f0fff4;
-}
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
+  .sidebar {
+    @apply items-center py-3 px-3  rounded text-yellow-500 hover:text-white text-2xl;
+  }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-}
+  .navbar {
+    @apply fixed top-0 flex justify-between bg-green-900 z-10 w-full;
+  }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  background-color: var(--green);
-  font-family: arial, sans-serif;
-}
+  .nav-menu {
+    @apply bg-green-800 w-44 h-full z-10 flex fixed right-full justify-center transition duration-500;
+  }
 
-h1,
-h2 {
-  color: var(--green);
-  padding-bottom: 0.5rem;
-}
+  .nav-menu.active {
+    @apply right-0 transition duration-500;
+  }
 
-h3 {
-  color: var(--green);
-}
+  .nav-text {
+    @apply flex justify-start items-center px-2 pr-0 pl-4 h-20;
+  }
 
-.container {
-  margin: 4rem 0.5rem 2rem 0.5rem;
-  padding: 3rem 1rem 0 1rem;
-  background-color: var(--lightgreen);
-}
+  .nav-text a {
+    @apply text-yellow-500 text-xl h-full flex items-center py-0 px-8 rounded-sm;
+  }
 
-.wrapper {
-  padding: 0.5rem;
-}
+  .nav-text a:hover {
+    @apply bg-yellow-500 text-green-900 z-10;
+  }
 
-.sidebar {
-  display: none;
+  .navbar-toggle {
+    @apply w-full h-16 flex justify-start items-center;
+  }
 }
-.margin--bt {
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0;
-}
-
-h1 + p {
-  margin-bottom: 1rem;
-}
-
-.border {
-  border-bottom: 1px solid black;
-}
-
-.sidebar--tech ul {
-  list-style-type: square;
-  display: flex;
-  margin-left: 1rem;
-}
-
-.sidebar--tech ul li {
-  padding-right: 1rem;
-}
-
-.experience li {
-  list-style: none;
-} */
