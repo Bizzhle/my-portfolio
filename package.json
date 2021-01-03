@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.0.0",
+    "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.1.0",
+    "@sanity/image-url": "^0.140.19",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",

@@ -13,7 +13,7 @@ export default function Resume() {
                 <div>
                     <SocialIcon url="https://twitter.com/bizzhle" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}} />
                     <SocialIcon url="https://github.com/bizzhle" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>
-                    <SocialIcon url="" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>        
+                    <SocialIcon url="https://app.netlify.com/teams/bizzhle/overview" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>        
                 </div>
                 </div>
             <div className="p-8">

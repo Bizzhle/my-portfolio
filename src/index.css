@@ -28,7 +28,7 @@
   }
 
   .nav-menu {
-    @apply bg-green-800 w-44 h-full z-10 flex fixed right-full justify-center transition duration-500;
+    @apply bg-green-800 w-44 min-h-screen z-10 flex absolute right-full justify-center transition duration-500;
   }
 
   .nav-menu.active {

@@ -25,8 +25,8 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="bg-green-50">
-                    <div className="mx-2 px-1 py-5">
-                        <article className="">
+                    <div className="mx-2 px-1 py-5 md:flex md:pr-20 md:pl-20">
+                        <article className="md:mr-5">
                             <h2 className="my-4 py-2 text-green-800 text-3xl font-semibold">ABOUT ME</h2>
                             <div class="description">
                                 <p className=" text-green-800 text-2xl font-semibold">Hi! I'm Egbo Paul,
@@ -58,8 +58,8 @@ export default function Home() {
                     </div>     
                 </section>
                 <section className="py-3 bg-green-900">
-                    <div className="mx-2 px-1 py-5">
-                        <article className="shadow p-3 center bg-green-700 mb-1">
+                    <div className="px-1 py-5 md:flex md:m-16">
+                        <article className="flex flex-1 shadow center bg-green-700 mb-3 md:mr-1 md:justify-center md:items-center">
                             <div className="py-7 px-4">
                                 <p className="text-white text-3xl font-bold">I build and <br />work on</p>
                                 <p className="text-white">web applications</p>
@@ -72,7 +72,7 @@ export default function Home() {
                             </div>
                            
                         </article>
-                        <article class="shadow p-3 center bg-green-700">
+                        <article className="flex flex-1 shadow center bg-green-700 mb-3 md:justify-center md:items-center">
                             <div className="py-7 px-4">
                                 <p className="text-white text-3xl font-bold">I also post <br />pictures</p>
                                 <p className="text-white">about my food and places i have been</p>
