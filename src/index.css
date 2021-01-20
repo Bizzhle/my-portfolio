@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 .serif {
   font-family: "Bree serif", serif;
-  font-weight: "700";
 }
 
 .red {
@@ -28,7 +28,7 @@
   }
 
   .nav-menu {
-    @apply bg-green-800 w-44 min-h-screen z-10 flex absolute right-full justify-center transition duration-500;
+    @apply bg-green-900 w-44 min-h-screen z-10 absolute right-full justify-center transition duration-500;
   }
 
   .nav-menu.active {
@@ -36,14 +36,14 @@
   }
 
   .nav-text {
-    @apply flex justify-start items-center px-2 pr-0 pl-4 h-20;
+    @apply flex justify-start items-center px-2 h-20;
   }
 
   .nav-text a {
-    @apply text-yellow-500 text-xl h-full flex items-center py-0 px-8 rounded-sm;
+    @apply text-yellow-500 text-xl flex items-center;
   }
 
-  .nav-text a:hover {
+  .nav-text li:hover {
     @apply bg-yellow-500 text-green-900 z-10;
   }
 

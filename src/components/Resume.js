@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 
 export default function Resume() {
     return (
-        <div className="bg-green-100 mx-2 mt-16 mb-8 md:max-w-6xl md:mx-auto">
+        <div className="bg-green-100 mx-2 mt-16 mb-8 md:max-w-6xl md:mx-auto font-roboto-slab">
             <div className="flex justify-end py-3 px-3 my-3">
                 <NavLink to="/" exact>
                     <FaHome className="mr-4" target="_blank" fgColor="#fff" style={{ color: "green", height:25, width: 25}}/>   
@@ -45,8 +45,8 @@ export default function Resume() {
                 </div>
                 <div className="main mr-12">
                     <section class="about mb-2 pb-4 border-bottom-black">
-                        <h1 className="text-green-700 pb-2 text-4xl serif">Egbo Uchenna Paul</h1>
-                        <p className="mb-4 serif">Frontend Developer</p>
+                        <h1 className="text-green-700 pb-2 text-4xl font-roboto-slab">Egbo Uchenna Paul</h1>
+                        <p className="mb-4 font-bold">Frontend Developer</p>
                         <p className="text-gray-800">Software developer with robust 
                             problem solving skills and passion for 
                             building products with enhanced user experience 

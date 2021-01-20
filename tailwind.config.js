@@ -13,7 +13,15 @@ module.exports = {
 
      roman: 'upper-roman',
     },
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'home-bg': "url('images/maxresdefault.jpg')",
+      }),
+      fontFamily: {
+        'bree-serif': '"Bree serif", serif',
+        'roboto-slab': '"Roboto slab", serif',
+      },
+    },
   },
   variants: {
     extend: {},

@@ -22,14 +22,13 @@ export default function Project() {
     }, []);
 
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-green-900">
             <Navbar />
-            <section className="container mx-auto pt-16">
-                <h1 className="text-3xl flex justify-center">My Projects </h1>
-                <h2 className="text-xl flex justify-center mb-12">Welcome to my projects</h2>
-                <section className="grid md:grid-cols-2 gap-8">
+            <section className="container my-16 mx-auto py-8">
+                <h2 className="text-xl flex justify-start text-blue-100">My Projects </h2>
+                <section className="grid md:grid-cols-2 gap-8 mt-8">
                     {projectData && projectData.map((project, index) => (
-                    <article className="relative rounded-lg shadow-xl bg-white p-8 mx-8">
+                    <article className="relative rounded shadow-xl bg-white p-8">
                         <h3 className="text-gray-600 text-3xl font-bold mb-2 hover:text-red-700">
                             <a 
                                 href={project.link}

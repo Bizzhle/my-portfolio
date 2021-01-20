@@ -23,12 +23,26 @@ function Navbar() {
                 </NavLink>
               </div>
               <div>
-                <NavLink to="#" className="menu-bars">
+                <NavLink to="#" className="menu-bars md:hidden">
                     <FaIcons.FaBars onClick={showSidebar} className="mr-4 my-4" style={{ color: "#ec9c08", height:35, width: 35}}/>      
                 </NavLink>
+                <nav className="mr-8">
+                    <ul className="nav-menu-items md:flex hidden">
+                        {SidebarData.map((item, index) => {
+                            return (
+                                <li key={index} className={item.cName}>
+                                    <NavLink to={item.path}>
+                                        <span className="md:hidden">{item.icon}</span>
+                                        <span className="ml-4">{item.title}</span>
+                                    </NavLink>
+
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </nav>
               </div>
-          </div>
-          <nav className={sidebar ? 'nav-menu active ' : 'nav-menu'}>
+              <nav className={sidebar ? 'nav-menu active ' : 'nav-menu'}>
                 <ul className="nav-menu-items" onClick={showSidebar}>
                     <li className="navbar-toggle">
                         <NavLink to="#" className="menu-bars">
@@ -48,6 +62,8 @@ function Navbar() {
                     })}
                 </ul>
             </nav>
+          </div>
+          
             </IconContext.Provider>
         </>
     )
