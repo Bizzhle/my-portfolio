@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
-import BlockContent from "@sanity/block-content-to-react"
-import { NavLink} from "react-router-dom"
+import BlockContent from "@sanity/block-content-to-react";
+import Navbar from "../components/Navbar.js";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -38,14 +38,7 @@ export default function SinglePost() {
 
     return (
         <main className="min-h-screen bg-white">
-            <div className="bg-blue-800">
-              <div className="logo">
-                <NavLink to="/" exact 
-                    className="inline-flex px-3 ml-4 my-4 rounded text-white  text-3xl font-bold">
-                    Paul
-                </NavLink>
-              </div>
-          </div>
+            <Navbar />
             <article className="container shadow-lg mt-10 mx-auto rounded-lg bg-blue-100 border-solid">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8">

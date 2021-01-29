@@ -14,28 +14,65 @@
   font-size: 2rem;
 }
 
+.nav-menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.cancel {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.nav-menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  color: #f1f1f1;
+}
+
 @layer components {
   .border-bottom-black {
     @apply border-b-2 border-black;
   }
 
-  .sidebar {
-    @apply items-center py-3 px-3  rounded text-yellow-500 hover:text-white text-2xl;
-  }
+  /* .sidebar {
+    @apply items-center py-3 px-3  rounded text-red-500 hover:text-white text-2xl;
+  } */
 
   .navbar {
     @apply fixed top-0 flex justify-between bg-green-900 z-10 w-full;
   }
-
+  /* 
   .nav-menu {
-    @apply bg-green-900 w-44 min-h-screen z-10 absolute right-full justify-center transition duration-500;
+    @apply flex
   }
 
   .nav-menu.active {
-    @apply right-0 transition duration-500;
-  }
+    @apply bg-red-500 w-0 min-h-screen z-50 fixed overscroll-x-none right-full justify-center transition duration-500;
+  } 
 
-  .nav-text {
+   .nav-text {
     @apply flex justify-start items-center px-2 h-20;
   }
 
@@ -45,9 +82,9 @@
 
   .nav-text li:hover {
     @apply bg-yellow-500 text-green-900 z-10;
-  }
+  } 
 
-  .navbar-toggle {
-    @apply w-full h-16 flex justify-start items-center;
-  }
+   .navbar-toggle {
+    @apply w-full h-16 absolute top-0 right-0;
+  }  */
 }

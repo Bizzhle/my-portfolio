@@ -1,10 +1,28 @@
+import styled from 'styled-components'
 import React, {useState} from 'react';
 // import { SocialIcon } from 'react-social-icons';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { NavLink } from "react-router-dom";
-import { SidebarData } from './SidebarData';
+// import * as AiIcons from 'react-icons/ai';
+import * as MdIcons from 'react-icons/md';
+import { NavLink as Link } from "react-router-dom";
+// import { SidebarData } from './SidebarData';
 import { IconContext } from 'react-icons'
+
+const NavLink = styled(Link)`
+    
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    cursor: pointer;
+
+    &.active {
+        color: #15cdfc;
+    }
+`
+
+
+
 
 function Navbar() {
 
@@ -15,10 +33,34 @@ function Navbar() {
     return (
         <>
         <IconContext.Provider value={{ color: 'yellow' }}>
-          <div className="navbar">
+            <div className="navbar">
+                <NavLink to="/" exact 
+                    className="inline-flex px-3 ml-4 my-4 rounded text-yellow-500  text-3xl font-bold" >
+                    Paul
+                </NavLink>
+                <NavLink to="#">
+                    <FaIcons.FaBars onClick={showSidebar} className="mr-4 my-4 md:hidden" style={{ color: "#ec9c08", height:35, width: 35}}/>      
+                </NavLink>
+                <div className={sidebar ? 'nav-menu' : 'hidden md:inline-flex text-yellow-500 text-2xl font-bold'} >
+                    <NavLink to="#">
+                        <MdIcons.MdCancel onClick={showSidebar} className="cancel mr-4 my-4 md:hidden" style={{ color: "#ec9c08", height:35, width: 35}}/>      
+                    </NavLink>
+                    <NavLink to="/Project">
+                        Project
+                    </NavLink>
+                    <NavLink to="/Blog">
+                        Blog
+                    </NavLink>
+                    <NavLink to="/Resume">
+                        Resume
+                    </NavLink>
+                </div>
+                
+            </div>
+          {/* <div className="navbar">
               <div className="logo">
                 <NavLink to="/" exact 
-                    className="inline-flex px-3 ml-4 my-4 rounded text-yellow-500  text-3xl font-bold">
+                    className="inline-flex px-3 ml-4 my-4 rounded text-yellow-500  text-3xl font-bold" >
                     Paul
                 </NavLink>
               </div>
@@ -44,9 +86,9 @@ function Navbar() {
               </div>
               <nav className={sidebar ? 'nav-menu active ' : 'nav-menu'}>
                 <ul className="nav-menu-items" onClick={showSidebar}>
-                    <li className="navbar-toggle">
+                    <li>
                         <NavLink to="#" className="menu-bars">
-                            <AiIcons.AiOutlineClose className="ml-2" style={{ color: "#ec9c08", height:25, width: 35}}/>
+                            <AiIcons.AiOutlineClose style={{ color: "#ec9c08", height:25, width: 35}}/>
                         </NavLink>
                     </li>
                     {SidebarData.map((item, index) => {
@@ -62,7 +104,7 @@ function Navbar() {
                     })}
                 </ul>
             </nav>
-          </div>
+          </div> */}
           
             </IconContext.Provider>
         </>

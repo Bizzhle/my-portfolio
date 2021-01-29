@@ -43,9 +43,9 @@ export default function Resume() {
                         </ul>
                     </div>
                 </div>
-                <div className="main mr-12">
+                <div className="main ">
                     <section class="about mb-2 pb-4 border-bottom-black">
-                        <h1 className="text-green-700 pb-2 text-4xl font-roboto-slab">Egbo Uchenna Paul</h1>
+                        <h1 className="text-green-700 pb-2 font-bold text-2xl md:text-4xl whitespace-nowrap">Egbo Uchenna Paul</h1>
                         <p className="mb-4 font-bold">Frontend Developer</p>
                         <p className="text-gray-800">Software developer with robust 
                             problem solving skills and passion for 

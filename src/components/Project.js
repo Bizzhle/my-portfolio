@@ -24,7 +24,7 @@ export default function Project() {
     return (
         <main className="min-h-screen bg-green-900">
             <Navbar />
-            <section className="container my-16 mx-auto py-8">
+            <section className="container my-16 mx-auto py-8 px-8">
                 <h2 className="text-xl flex justify-start text-blue-100">My Projects </h2>
                 <section className="grid md:grid-cols-2 gap-8 mt-8">
                     {projectData && projectData.map((project, index) => (
@@ -40,14 +40,14 @@ export default function Project() {
                            </a>
                         </h3>
                         <div className="text-gray-500 space-y-3 md:space-x-3">
-                                <span className="inline-block">
+                                {/* <span className="inline-block">
                                     <strong className="font-bold">Finished on</strong>:{" "}
                                     {new Date(project.date).toLocaleDateString()}
                                 </span>
                                 <span className="inline-block">
                                     <strong className="font-bold">Company</strong>:{" "}
                                     {project.place}
-                                </span>
+                                </span> */}
                                 <span className="inline-block">
                                     <strong className="font-bold">Type</strong>:{" "}
                                     {project.projectType}

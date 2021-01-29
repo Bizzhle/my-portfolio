@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { SocialIcon } from 'react-social-icons';
 
-export default function Home() {
+export default function Home(props) {
     return (
-        <main className="h-screen bg-white bg-home-bg bg-no-repeat bg-cover">
+        <main className="bg-white">
             <Navbar />
-            <section className="relative flex justify-center items-center min-h-screen border-b-8 border-blue-300">
+            <section className="relative flex justify-center items-center min-h-screen bg-home-bg bg-no-repeat bg-cover border-b-8 border-blue-300">
                     <div className="p-6 mx-6 rounded bg-green-700">
                         <p className="text-2xl text-yellow-500">Hi, I'm a </p>
                         <p className="text-4xl text-green-400 font-bold">Frontend Developer</p>
@@ -17,14 +17,14 @@ export default function Home() {
             
                         <button 
                         className="px-4 py-2 mt-4 border-solid border-2 border-yellow-500
-                         bg-green-700 hover:bg-yellow-500 text-yellow-500 hover:text-green-700 font-semibold rounded-md">
+                         bg-green-700 hover:bg-yellow-500 text-yellow-500 hover:text-green-700 cursor-pointer font-semibold rounded-md">
                             <NavLink to="/Resume">
                                 view resume
                             </NavLink>
                         </button>
                     </div>
                 </section>
-                <section className="about-me bg-white md:max-w-7xl mx-auto">
+                <section className="about-me bg-white md:max-w-7xl  mx-auto">
                     <div className="px-8 py-8 md:flex">
                         <article className="md:mr-5">
                             <h2 className="my-4 py-2 text-green-800 text-3xl font-semibold">ABOUT ME</h2>
@@ -35,7 +35,7 @@ export default function Home() {
                                 scalable products using current best practices 
                                 in web development. My goal is to utilize available
                                 tools and techniques to build high perfomance products that improves user experiences.</p>
-                                <p className=" text-green-800">Sometimes, i write soft skill articles based on things I've learnt over the course of my career.</p>
+                               
                                 <p className=" text-green-800">When i'm not coding, i spend most of my time cooking or taking pictures.</p>
                                 <p className=" text-green-800">Here are a few technologies i've been working with recently:</p>
                                 <ul className=" p-3 list-square grid grid-cols-2 text-green-800">

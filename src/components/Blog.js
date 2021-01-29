@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import sanityClient from "../client.js"
-
+import Navbar from "../components/Navbar";
 
 
 export default function Blog() {
@@ -28,17 +28,10 @@ export default function Blog() {
     return (
        
         <main className="bg-white min-h-screen">
-            <div className="bg-blue-800">
-              <div className="logo">
-                <NavLink to="/" exact 
-                    className="inline-flex px-3 ml-4 my-4 rounded text-white  text-3xl font-bold">
-                    Paul
-                </NavLink>
-              </div>
-          </div>
+            <Navbar />
             <section className="container mx-auto p-16">
-                <h1 className="text-3xl md:text-5xl flex justify-center p-2">Blog Posts Page</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my Blog</h2>
+                <h1 className="text-3xl md:text-5xl flex justify-center p-2 whitespace-nowrap">Paul's Blog</h1>
+                <h2 className="text-lg text-gray-600 flex justify-center mb-12">Front-end developer</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData && postData.map((post, index) => (
                         <article>
