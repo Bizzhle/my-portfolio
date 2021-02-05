@@ -36,9 +36,9 @@ export default function Home(props) {
                                 in web development. My goal is to utilize available
                                 tools and techniques to build high perfomance products that improves user experiences.</p>
                                
-                                <p className=" text-green-800">When i'm not coding, i spend most of my time cooking or taking pictures.</p>
+                                <p className=" text-green-800">When I'm not coding, I spend most of my time cooking or taking pictures.</p>
                                 <p className=" text-green-800">Here are a few technologies i've been working with recently:</p>
-                                <ul className=" p-3 list-square grid grid-cols-2 text-green-800">
+                                <ul className=" p-3 list-square list-inside grid grid-cols-2 text-green-800">
                                     <li>JavaScript</li>
                                     <li>HTML</li>
                                     <li>CSS(tailwind)</li>
@@ -78,7 +78,7 @@ export default function Home(props) {
                                 <p className="text-white">about my food and places i have been</p>
                                 <button className="px-4 py-2 mt-4 border-solid border border-yellow-500
                          bg-green-700 hover:bg-yellow-500 text-yellow-500 hover:text-green-700 font-semibold rounded">
-                            <NavLink to="/Resume">
+                            <NavLink to="/Blog">
                                 BROWSE MY PICTURES
                             </NavLink></button>
                             
@@ -90,9 +90,8 @@ export default function Home(props) {
                 <div className="mx-auto m-4">
                     <SocialIcon url="https://twitter.com/bizzhle" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}} />
                     <SocialIcon url="https://github.com/bizzhle" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>
-                    <SocialIcon url="https://app.netlify.com/teams/bizzhle/overview" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>        
+                    <SocialIcon url="https://www.linkedin.com/in/paul-egbo-6a658a166/" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>        
                 </div>
-                    <p className="py-2">Created by paul uchenna egbo</p>
                 </footer>
         </main>    
 

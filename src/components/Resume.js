@@ -13,7 +13,7 @@ export default function Resume() {
                 <div>
                     <SocialIcon url="https://twitter.com/bizzhle" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}} />
                     <SocialIcon url="https://github.com/bizzhle" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>
-                    <SocialIcon url="https://app.netlify.com/teams/bizzhle/overview" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>        
+                    <SocialIcon url="https://www.linkedin.com/in/paul-egbo-6a658a166/" className="mr-4" target="_blank" fgColor="#fff" style={{ height:25, width: 25}}/>        
                 </div>
                 </div>
             <div className="main md:flex p-6 md:w-full">
@@ -21,8 +21,9 @@ export default function Resume() {
                     <div class="sidebar--address mb-4">
                         <a href="https://github.com/Bizzhle"
                             target="_blank" rel="noreferrer" className="block text-green-800 underline">github.com/Bizzhle</a>
-                        <a href="malito:gabrieluche2@gmail.com" 
-                            target="_blank" rel="noreferrer noopener" 
+                        
+                        <a href="mailto:gabrieluche2@gmail.com" 
+                            rel="noreferrer noopener" 
                             className="text-green-800 underline">gabrieluche2@gmail.com</a> 
                         <p>Reinheim, Hessen</p>
                     </div>
