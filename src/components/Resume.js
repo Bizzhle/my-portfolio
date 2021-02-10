@@ -47,7 +47,7 @@ export default function Resume() {
                 <div className="main ">
                     <section class="about mb-2 pb-4 border-bottom-black">
                         <h1 className="text-green-700 pb-2 font-bold text-2xl md:text-4xl whitespace-nowrap">Egbo Uchenna Paul</h1>
-                        <p className="mb-4 font-bold">Frontend Developer</p>
+                        <p className="mb-4 font-bree-serif">Frontend Developer</p>
                         <p className="text-gray-800">Software developer with robust 
                             problem solving skills and passion for 
                             building products with enhanced user experience 
@@ -63,8 +63,18 @@ export default function Resume() {
                                 <li>Javascript</li>
                                 <li>CSS</li>
                                 <li>React</li>
+                                <li>Git</li>
                             </ul>
                         </div>
+                    </section>
+                    <section className="pb-4 border-bottom-black">
+                        <h2 className="text-green-800 pb-2 text-2xl font-semibold">Projects</h2>
+                        <p className="text-gray-800">Links to my work can be found on</p>
+                        <NavLink to="/Project" className="text-green-900">
+                            <a href="https://paul-egbo-portfolio.netlify.app/Project"
+                             target="_blank"
+                             rel="noreferrer">paul-egbo-portolio.netlify.app/project</a>
+                        </NavLink>
                     </section>
                     <section className="experience mb-2 pb-4 border-bottom-black">
                         <h2 className="text-green-700 pb-2 text-2xl font-semibold">Experience</h2>
@@ -100,15 +110,7 @@ export default function Resume() {
                             <span class="date">2008 - 2013</span>
                         </article>
                     </section>
-                    <section>
-                        <h2 className="text-green-800 pb-2 text-2xl font-semibold">Projects</h2>
-                        <p className="text-gray-800">Links to my work can be found on</p>
-                        <NavLink to="/projects" className="text-green-900">
-                            <a href="https://paul-egbo-portfolio.netlify.app/Project"
-                             target="_blank"
-                             rel="noreferrer">paul-egbo-portolio.netlify.app/projects</a>
-                        </NavLink>
-                    </section>
+                    
                 </div>
 
             </div>

@@ -4,10 +4,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 
 .serif {
   font-family: "Bree serif", serif;
 }
+/* .pangolin {
+  font-family: "Pangolin", serif;
+} */
 
 .red {
   color: red;

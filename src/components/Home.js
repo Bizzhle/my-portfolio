@@ -1,6 +1,7 @@
 import React from 'react';
-// import image from "../maxresdefault.jpg";
-import paul from "../paul.jpg";
+
+// import paul from "../paul.jpg";
+import paul1 from "../images/paul1.JPG";
 import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { SocialIcon } from 'react-social-icons';
@@ -9,9 +10,9 @@ export default function Home(props) {
     return (
         <main className="bg-white">
             <Navbar />
-            <section className="relative flex justify-center items-center min-h-screen bg-home-bg bg-no-repeat bg-cover border-b-8 border-blue-300">
+            <section className="relative flex justify-center items-center min-h-screen bg-gray-400 bg-home-bg bg-no-repeat bg-cover border-b-8 border-blue-300">
                     <div className="p-6 mx-6 rounded bg-green-700">
-                        <p className="text-2xl text-yellow-500">Hi, I'm a </p>
+                        <h2 className="text-2xl text-yellow-500">Paul Egbo </h2>
                         <p className="text-4xl text-green-400 font-bold">Frontend Developer</p>
                         <p className="text-2xl text-green-400 serif">I build products for the web</p>
             
@@ -24,32 +25,26 @@ export default function Home(props) {
                         </button>
                     </div>
                 </section>
-                <section className="about-me bg-white md:max-w-7xl  mx-auto">
-                    <div className="px-8 py-8 md:flex">
-                        <article className="md:mr-5">
+                <section className="about-me bg-green-50 max-w-6xl mx-auto">
+                    <div className="px-8 py-8 md:flex md:justify-around">
+                        <article className="md:mr-10">
                             <h2 className="my-4 py-2 text-green-800 text-3xl font-semibold">ABOUT ME</h2>
-                            <div className="description">
-                                <p className=" text-green-800 text-2xl font-semibold">Hi! I'm Egbo Paul,
-                                a Germany based software developer</p>
-                                <p className=" text-green-800">I specialize in building 
-                                scalable products using current best practices 
-                                in web development. My goal is to utilize available
-                                tools and techniques to build high perfomance products that improves user experiences.</p>
-                               
-                                <p className=" text-green-800">When I'm not coding, I spend most of my time cooking or taking pictures.</p>
-                                <p className=" text-green-800">Here are a few technologies i've been working with recently:</p>
-                                <ul className=" p-3 list-square list-inside grid grid-cols-2 text-green-800">
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS(tailwind)</li>
-                                    <li>REACT</li>
+                            <div className="description text-green-800">
+                                <ul className="list-inside list-disc ">
+                                    <li>I live in Reinheim Germany.</li>
+                                    <li>Masters Student studying Distriibuted software system.</li>
+                                    <li>I am an avid sports fan, I follow football, F1, Tennis and the NBA religiously</li>
+                                    <li>Love cooking, eating, not so much.</li>
+                                    <li>Sofware is my passion</li>
+                                    <li>I love to build stuff and i believe i am getting good at it every day.</li>
                                 </ul>
+                               
                             </div>
                         </article>
                         <article>
-                            <div className="my-0 mx-auto text-center shadow-2xl" style={{ width: 300}}>
-                                <img src={paul} alt="paul in a restaurant" className="object-cover w-full" />
-                                <div className="conatiner">
+                            <div className="my-0 mx-auto text-center rounded-lg shadow-2xl" style={{ width: 300}}>
+                                <img src={paul1} alt="paul in a restaurant" className="object-cover w-full" />
+                                <div className="">
                                     <h4><b>Paul Egbo</b></h4>
                                     <p>Web developer</p>
                                 </div>
@@ -74,12 +69,12 @@ export default function Home(props) {
                         </article>
                         <article className="flex flex-1 shadow center bg-green-700 mb-3 md:justify-center md:items-center">
                             <div className="py-7 px-4">
-                                <p className="text-white text-3xl font-bold">I also post <br />pictures</p>
-                                <p className="text-white">about my food and places i have been</p>
+                                <p className="text-white text-3xl font-bold">I also <br />write</p>
+                                <p className="text-white">about experience</p>
                                 <button className="px-4 py-2 mt-4 border-solid border border-yellow-500
                          bg-green-700 hover:bg-yellow-500 text-yellow-500 hover:text-green-700 font-semibold rounded">
                             <NavLink to="/Blog">
-                                BROWSE MY PICTURES
+                                BROWSE MY BLOG
                             </NavLink></button>
                             
                             </div>

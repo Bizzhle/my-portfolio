@@ -12,6 +12,7 @@ module.exports = {
      square: 'square',
 
      roman: 'upper-roman',
+    
     },
     extend: {
       backgroundImage: theme => ({
@@ -19,7 +20,8 @@ module.exports = {
       }),
       fontFamily: {
         'bree-serif': '"Bree serif", serif',
-        'roboto-slab': '"Roboto slab", serif',
+        'roboto-slab': '"Roboto Slab", serif',
+        'pangolin': '"Pangolin", serif',
       },
     },
   },
