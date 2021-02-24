@@ -1,27 +1,26 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     listStyleType: {
-      none: 'none',
+      none: "none",
 
-     disc: 'disc',
+      disc: "disc",
 
-     decimal: 'decimal',
+      decimal: "decimal",
 
-     square: 'square',
+      square: "square",
 
-     roman: 'upper-roman',
-    
+      roman: "upper-roman",
     },
     extend: {
-      backgroundImage: theme => ({
-        'home-bg': "url('images/maxresdefault.jpg')",
+      backgroundImage: (theme) => ({
+        "home-bg": "url('images/maxresdefault.webp')",
       }),
       fontFamily: {
-        'bree-serif': '"Bree serif", serif',
-        'roboto-slab': '"Roboto Slab", serif',
-        'pangolin': '"Pangolin", serif',
+        "bree-serif": '"Bree serif", serif',
+        "roboto-slab": '"Roboto Slab", serif',
+        pangolin: '"Pangolin", serif',
       },
     },
   },
@@ -29,4 +28,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
