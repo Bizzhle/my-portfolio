@@ -1,7 +1,7 @@
 import React from "react";
 
 // import paul from "../paul.jpg";
-import paul1 from "../images/paul1.webp";
+import paul from "../images/paul2.webp";
 import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { SocialIcon } from "react-social-icons";
@@ -34,7 +34,7 @@ export default function Home(props) {
             <h2 className="my-4 py-2 text-green-800 text-3xl font-semibold">
               ABOUT ME
             </h2>
-            <div className="description text-green-800">
+            <div className="description text-green-800 mb-8">
               <ul className="list-inside list-disc ">
                 <li>I live in Reinheim Germany.</li>
                 <li>Masters Student studying Distriibuted software system.</li>
@@ -56,11 +56,7 @@ export default function Home(props) {
               className="my-0 mx-auto text-center rounded-lg shadow-2xl"
               style={{ width: 300 }}
             >
-              <img
-                src={paul1}
-                alt="paul in a restaurant"
-                className="object-cover w-full"
-              />
+              <img src={paul} alt="Passport" className="object-cover w-full" />
               <div className="">
                 <h4>
                   <b>Paul Egbo</b>
@@ -112,21 +108,21 @@ export default function Home(props) {
             url="https://twitter.com/bizzhle"
             className="mr-4"
             target="_blank"
-            fgColor="#fff"
+            fgcolor="#fff"
             style={{ height: 25, width: 25 }}
           />
           <SocialIcon
             url="https://github.com/bizzhle"
             className="mr-4"
             target="_blank"
-            fgColor="#fff"
+            fgcolor="#fff"
             style={{ height: 25, width: 25 }}
           />
           <SocialIcon
             url="https://www.linkedin.com/in/paul-egbo-6a658a166/"
             className="mr-4"
             target="_blank"
-            fgColor="#fff"
+            fgcolor="#fff"
             style={{ height: 25, width: 25 }}
           />
         </div>

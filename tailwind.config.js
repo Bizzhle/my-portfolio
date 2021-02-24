@@ -20,7 +20,6 @@ module.exports = {
       fontFamily: {
         "bree-serif": '"Bree serif", serif',
         "roboto-slab": '"Roboto Slab", serif',
-        pangolin: '"Pangolin", serif',
       },
     },
   },
