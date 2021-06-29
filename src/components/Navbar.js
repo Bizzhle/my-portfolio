@@ -34,7 +34,7 @@ function Navbar() {
             exact
             className="inline-flex px-3 ml-4 my-4 rounded text-yellow-500  text-3xl font-bold"
           >
-            Paul
+            HOME
           </NavLink>
           <NavLink to="#">
             <FaIcons.FaBars
