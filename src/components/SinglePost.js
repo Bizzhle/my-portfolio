@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import sanityClient from "../client.js";
-import imageUrlBuilder from "@sanity/image-url";
+// import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
-import Navbar from "../components/Navbar.js";
+// import Navbar from "../components/Navbar.js";
 
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source) {
-  return builder.image(source);
-}
+// const builder = imageUrlBuilder(sanityClient);
+// function urlFor(source) {
+//   return builder.image(source);
+// }
 
 export default function SinglePost() {
   const [singlePost, setSinglePost] = useState(null);
