@@ -51,8 +51,8 @@ function Navbar() {
                 style={{ color: "#fff", height: 25, width: 35 }}
               />
             </NavLink>
-            <NavLink to="/Project">Project</NavLink>
-            <NavLink to="/Blog">Blog</NavLink>
+            <NavLink to="/Project">Projects</NavLink>
+            {/* <NavLink to="/Blog">Blog</NavLink> */}
             {/* <NavLink to="/Resume">Resume</NavLink> */}
           </div>
         </div>
