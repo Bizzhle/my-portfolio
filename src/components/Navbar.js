@@ -12,7 +12,7 @@ const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 8px;
   cursor: pointer;
 
   &.active {
@@ -27,39 +27,33 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "yellow" }}>
-        <div className="navbar">
-          <NavLink
-            to="/"
-            exact
-            className="inline-flex px-3 ml-4 my-4 rounded text-yellow-500  text-3xl font-bold"
-          >
-            HOME
+      <IconContext.Provider value={{ color: "white" }}>
+        <div className="navbar font-medium px-5">
+          <NavLink to="/" exact className="  text-white  text-xl ">
+            Home
           </NavLink>
           <NavLink to="#">
             <FaIcons.FaBars
               onClick={showSidebar}
-              className="mr-4 my-4 md:hidden"
-              style={{ color: "#ec9c08", height: 35, width: 35 }}
+              className=" my-2 md:hidden"
+              style={{ color: "#fff", height: 25, width: 35 }}
             />
           </NavLink>
           <div
             className={
-              sidebar
-                ? "nav-menu"
-                : "hidden md:inline-flex text-yellow-500 text-2xl font-bold"
+              sidebar ? "nav-menu" : "hidden md:inline-flex text-white text-xl "
             }
           >
             <NavLink to="#">
               <MdIcons.MdCancel
                 onClick={showSidebar}
-                className="cancel mr-4 my-4 md:hidden"
-                style={{ color: "#ec9c08", height: 35, width: 35 }}
+                className="cancel mr-1 my-2 md:hidden"
+                style={{ color: "#fff", height: 25, width: 35 }}
               />
             </NavLink>
             <NavLink to="/Project">Project</NavLink>
             <NavLink to="/Blog">Blog</NavLink>
-            <NavLink to="/Resume">Resume</NavLink>
+            {/* <NavLink to="/Resume">Resume</NavLink> */}
           </div>
         </div>
       </IconContext.Provider>

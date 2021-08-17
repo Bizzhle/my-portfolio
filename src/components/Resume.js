@@ -83,9 +83,7 @@ export default function Resume() {
             <h1 className="text-green-700 pb-2 font-bold text-2xl md:text-4xl whitespace-nowrap">
               Egbo Uchenna Paul
             </h1>
-            <p className="mb-4 font-bree-serif text-xl font-bold">
-              Frontend Developer
-            </p>
+            <p className="mb-4 text-xl font-bold">Frontend Developer</p>
             <p className="text-gray-800">
               Frontend web developer with problem solving skills and passion for
               building products for the web. I am very passionate about software

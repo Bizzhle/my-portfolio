@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 .red {
   color: red;
@@ -57,7 +58,7 @@
   } */
 
   .navbar {
-    @apply fixed top-0 flex justify-between bg-green-900 z-10 w-full;
+    @apply fixed top-0 flex justify-between bg-dark-blue z-10 w-full;
   }
   /* 
   .nav-menu {
