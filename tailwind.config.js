@@ -27,6 +27,7 @@ module.exports = {
         "bree-serif": '"Bree serif", serif',
         "roboto-slab": '"Roboto Slab", serif',
         "roboto-condensed": '"Roboto Condensed", serif',
+        "Noto-sans": '"Noto Sans JP", sans-serif',
       },
     },
   },
