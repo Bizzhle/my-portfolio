@@ -7,12 +7,12 @@ export default function Home(props) {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col  justify-center items-center min-h-screen bg-grad-bg bg-no-repeat bg-cover border-b-8 border-blue-300">
+      <section className="flex flex-col justify-center items-center min-h-screen bg-grad-bg bg-no-repeat bg-cover border-b-8 border-blue-300">
         <div className="max-w-2xl w-4/5 mx-auto">
           <div className="bg-dark-blue rounded-t-md flex justify-center items-center text-white">
             <p>profile</p>
           </div>
-          <div className=" rounded-b-md leading-relaxed p-5 bg-black opacity-75 text-white ">
+          <div className=" rounded-b-md leading-relaxed p-5 bg-black opacity-75 text-white font-Noto-sans ">
             <p> Full Name:</p>
             <p>{">> "} Paul Uchenna Egbo</p>
 
