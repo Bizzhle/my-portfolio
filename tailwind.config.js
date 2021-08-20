@@ -21,7 +21,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "home-bg": "url('images/maxresdefault.webp')",
-        "grad-bg": "url('images/pexel-grad.webp')",
+        "pexel-bg": "url('images/pexel-grad.webp')",
       }),
       fontFamily: {
         "bree-serif": '"Bree serif", serif',
