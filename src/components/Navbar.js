@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: "white" }}>
-        <div className="navbar font-medium px-5">
+        <div className="navbar font-medium px-5 font-roboto-condensed">
           <NavLink to="/" exact className="  text-white  text-xl ">
             Home
           </NavLink>

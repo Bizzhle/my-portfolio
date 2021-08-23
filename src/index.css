@@ -11,6 +11,12 @@
   color: red;
   font-size: 2rem;
 }
+/* .bg_image {
+  background-image: url('images/pexel-grad.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+} */
 
 .nav-menu {
   height: 100%;
