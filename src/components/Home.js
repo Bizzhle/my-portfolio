@@ -5,9 +5,9 @@ import { SocialIcon } from "react-social-icons";
 
 export default function Home(props) {
   return (
-    <div>
+    <div className=" ">
       <Navbar />
-      <section className="flex flex-col  justify-center items-center min-h-screen bg-pexel-bg  bg-no-repeat bg-cover bg-fixed border-b-8 border-blue-300">
+      <section className="flex flex-col  justify-center items-center min-h-screen bg-gradient-to-r from-blue-900  to-red-700  bg-no-repeat bg-cover bg-fixed border-b-8 border-blue-300">
         <div className="max-w-2xl w-4/5 mx-auto">
           <div className="bg-dark-blue rounded-t-md flex justify-center items-center text-white">
             <p>profile</p>

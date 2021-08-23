@@ -20,7 +20,6 @@ module.exports = {
         "dark-yellow": "#111202",
       },
       backgroundImage: (theme) => ({
-        "home-bg": "url('images/maxresdefault.webp')",
         "pexel-bg": "url('images/pexel-grad.webp')",
       }),
       fontFamily: {
