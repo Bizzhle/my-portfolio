@@ -26,7 +26,7 @@ export default function Project() {
   return (
     <>
       <Navbar />
-      <section className=" min-h-screen bg-dark-blue  px-8">
+      <section className=" min-h-screen bg-dark-blue  px-8 pb-16">
         <h1 className=" flex justify-center py-5 my-5 text-3xl text-white">
           Personal Projects{" "}
         </h1>
