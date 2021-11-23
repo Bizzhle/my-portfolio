@@ -20,7 +20,7 @@ export default function Home(props) {
             <p>{">> "}Reinheim, Hessen</p>
 
             <p>Skills:</p>
-            <p> {">> "} ['React, Node, Express, Git, Docker']</p>
+            <p> {">> "} ['SASS, React, Node, Express, Git, Docker']</p>
 
             <p>Links:</p>
             <p>
